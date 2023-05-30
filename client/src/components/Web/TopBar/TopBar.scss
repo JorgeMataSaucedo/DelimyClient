@@ -1,0 +1,43 @@
+@import "~/src/scss/index.scss";
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap');
+
+.delimy{
+  color: rgba(219,77,230,90);
+  font-family: 'Merriweather', serif;
+}
+.top-bar {
+  height: 60px;
+  background-color: $background-dark-web;
+
+  > .ui.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  &__left {
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    .logo {
+      height: 60%;
+      > svg {
+        height: 100%;
+      }
+    }
+
+    .menu {
+      margin-left: 20px;
+
+      a {
+        margin: 0 5px;
+        color: $text-light;
+        &:hover {
+          opacity: 0.6;
+        }
+      }
+    }
+  }
+}
